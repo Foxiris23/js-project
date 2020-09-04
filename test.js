@@ -1,13 +1,21 @@
-"use strict";
+'use strict';
 
-let text= "Hello";
+const video = ["youtube", "vimeo", "rutube"],
+      blog = ["wordpress", "journal", "blogger"],
+      internet = [...video, ...blog, 'vk', 'facebook'];
 
-const out=function(str){
-    console.log(str);
+console.log(internet);
+
+const obj={
+    a: 1,
+    b: 2
 };
 
-out(text);
+const obj2 = {...obj};
 
-const calc= () => 1+1;
+console.log(obj2);
 
-console.log(calc());
+obj2.a=2;
+
+console.log(obj2);
+console.log(obj);
